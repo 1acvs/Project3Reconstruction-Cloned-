@@ -25,7 +25,9 @@ This repo is designed to be:
 Do NOT add frameworks for the course version.
 
 ## Issues I found 
-- No form Validatio
+- No form Validation
+- When I click details all the cards expand 
+
 
 
 
@@ -34,7 +36,8 @@ Do NOT add frameworks for the course version.
 - Centered FAQ & Contact Section 
 - Footer
 - Section Titles
-- Filters for Flip Card
+- Filters f
+- Flip Card
 -  
 
 
@@ -50,16 +53,21 @@ Do NOT add frameworks for the course version.
   - Menu Button
   - Filters
   - Card Flip
+  -
 
 
    ## CHOSEN INTERVENTION
 
   - The intervention I choose to do was adding a flip back buttton
+  - Form Validation
 
 
 
   ## REFLECTION & CLEANUP
-  - 
+  -  I understood the HTML Structure very easily . The section comments in the HTML and the labeled blocks in app.js also helped me understand issues that could be found.
+  -  The card Redoing the cardflip and details section for this project took u the most of my time because of the way I wanted it to loook something would always go wrong . One of the things that went wrong and took me a minute to find out what was wrong is that when I made a change and hit flip on the card the words and what not would be flipped or inverse. Another one was not being able to see a flip back button it kinda made me feel slow for a minute.
+  - The flip card pattern is the one thing i believe ive easily. I think I used to scan for what something does before understanding how it works. Working through this code made me trace the state changes and what class gets added, what attribute flips, what element gets targeted. That's the part I'm starting to find easier now.
+
 
 
   
