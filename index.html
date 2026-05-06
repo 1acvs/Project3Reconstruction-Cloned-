@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Community Programs Hub</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div class="brand">
+          <div class="site-header__title">Community Programs</div>
+          <div class="site-header__tagline">
+            A simple hub for resources, sessions, and updates
+          </div>
+        </div>
+
+        <button
+          class="menu-btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="menu-btn__icon" aria-hidden="true"></span>
+          <span class="menu-btn__label">Menu</span>
+        </button>
+      </div>
+
+      <nav id="site-nav" class="nav nav--closed" aria-label="Primary">
+     <button class="nav__close" type="button" aria-label="Close menu">
+       <span></span>
+       <span></span>
+      </button>
+        <a class="nav__link nav__link--active" href="#overview">Overview</a>
+        <a class="nav__link" href="#programs">Programs</a>
+        <a class="nav__link" href="#faq">FAQ</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main" class="page">
+      <section id="overview" class="section">
+        <h1 class="section__title">Overview</h1>
+        <p class="section__lead">
+          This site is a starter codebase for ARTI-324A Project 3. Your job is
+          to understand how it works and make targeted improvements without
+          rebuilding from scratch.
+        </p>
+
+        <div class="callout">
+          <h2 class="callout__title">Your task</h2>
+          <p class="callout__text">
+            Read the code. Trace the interactions. Then make small, intentional
+            changes.
+          </p>
+        </div>
+      </section>
+
+      <section id="programs" class="section">
+        <div class="section__head">
+          <h2 class="section__title">Program Highlights</h2>
+
+          <!-- Optional filter controls (present, but not wired-up fully on purpose) -->
+          <div class="filters">
+            <button
+              class="filter-btn filter-btn--active"
+              type="button"
+              data-filter="all"
+            >
+              All
+            </button>
+            <button class="filter-btn" type="button" data-filter="workshop">
+              Workshops
+            </button>
+            <button class="filter-btn" type="button" data-filter="resource">
+              Resources
+            </button>
+            <button class="filter-btn" type="button" data-filter="event">
+              Events
+            </button>
+          </div>
+        </div>
+
+        <div class="grid">
+          <!-- Card 1 -->
+          <article class="card card--program" data-category="workshop">
+            <div class="card__body">
+              <div class="card__meta">
+                <span class="tag tag--workshop">Workshop</span>
+                <span class="meta">Duration: 60–90 min</span>
+              </div>
+              <h3 class="card__title">Design Systems Basics</h3>
+              <p class="card__text">
+                Learn how spacing, type, and components become reusable rules
+                instead of one-off decisions.
+              </p>
+
+              <div class="card__actions">
+                <button
+                  class="btn btn--primary js-details"
+                  type="button"
+                  aria-expanded="false"
+                >
+                  Details
+                </button>
+                <button
+                  class="btn btn--ghost js-flip"
+                  type="button"
+                  aria-expanded="false"
+                >
+                  Flip
+                </button>
+              </div>
+            </div>
+
+            <!-- Expand/Collapse panel -->
+            <div class="panel panel--closed" aria-hidden="true">
+              <div class="panel__inner">
+                <h4 class="panel__title">What you'll do</h4>
+                <ul class="list">
+                  <li>Map tokens to spacing</li>
+                  <li>Build a repeatable card</li>
+                  <li>Define 2–3 component states</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Flip "back" (hidden by state) -->
+            <div class="flip flip--back" aria-hidden="true">
+              <div class="flip__inner">
+                <h4 class="flip__title">Key info</h4>
+                <p class="flip__text">
+                  Bring a laptop. Expect short demos and guided practice. No
+                  prior JS required.
+                </p>
+              </div>
+              <button class="btn btn--ghost js-flip" type="button">Flip back</button>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card card--program" data-category="resource">
+            <div class="card__body">
+              <div class="card__meta">
+                <span class="tag tag--resource">Resource</span>
+                <span class="meta">Updated: Feb</span>
+              </div>
+              <h3 class="card__title">Accessibility Checklist</h3>
+              <p class="card__text">
+                A short checklist for focus states, labels, and keyboard testing
+                for common UI patterns.
+              </p>
+
+              <div class="card__actions">
+                <button
+                  class="btn btn--primary js-details"
+                  type="button"
+                  aria-expanded="false"
+                >
+                  Details
+                </button>
+                <button
+                  class="btn btn--ghost js-flip"
+                  type="button"
+                  aria-expanded="false"
+                >
+                  Flip
+                </button>
+              </div>
+            </div>
+
+            <div class="panel panel--closed" aria-hidden="true">
+              <div class="panel__inner">
+                <h4 class="panel__title">Includes</h4>
+                <ul class="list">
+                  <li>Focus styling examples</li>
+                  <li>Label patterns</li>
+                  <li>Testing steps</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flip flip--back" aria-hidden="true">
+              <div class="flip__inner">
+                <h4 class="flip__title">Tip</h4>
+                <p class="flip__text">
+                  Try tabbing through your UI. If you get lost, your users will
+                  too.
+                </p>
+              </div>
+              <button class="btn btn--ghost js-flip" type="button">Flip back</button>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card card--program" data-category="event">
+            <div class="card__body">
+              <div class="card__meta">
+                <span class="tag tag--event">Event</span>
+                <span class="meta">Next: Wed</span>
+              </div>
+              <h3 class="card__title">Open Lab Night</h3>
+              <p class="card__text">
+                Bring a problem. Get help. Practice reading code and making
+                small, safe changes.
+              </p>
+
+              <div class="card__actions">
+                <button
+                  class="btn btn--primary js-details"
+                  type="button"
+                  aria-expanded="false"
+                >
+                  Details
+                </button>
+                <button
+                  class="btn btn--ghost js-flip"
+                  type="button"
+                  aria-expanded="false"
+                >
+                  Flip
+                </button>
+              </div>
+            </div>
+
+            <div class="panel panel--closed" aria-hidden="true">
+              <div class="panel__inner">
+                <h4 class="panel__title">What to bring</h4>
+                <ul class="list">
+                  <li>Current project files</li>
+                  <li>One question you can’t answer</li>
+                  <li>A willingness to refactor</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flip flip--back" aria-hidden="true">
+              <div class="flip__inner">
+                <h4 class="flip__title">Format</h4>
+                <p class="flip__text">
+                  Short check-ins, independent work, and peer debugging.
+                </p>
+              </div>
+              <button class="btn btn--ghost js-flip" type="button">Flip back</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <h2 class="section__title">FAQ</h2>
+
+        <div class="faq">
+          <button class="faq__q js-faq" type="button" aria-expanded="false">
+            What is this codebase for?
+          </button>
+          <div class="faq__a panel panel--closed" aria-hidden="true">
+            <div class="panel__inner">
+              <p>
+                This starter is intentionally imperfect. Your work is to
+                understand it and improve it without starting over.
+              </p>
+            </div>
+          </div>
+
+          <button class="faq__q js-faq" type="button" aria-expanded="false">
+            Can I redesign the visuals?
+          </button>
+          <div class="faq__a panel panel--closed" aria-hidden="true">
+            <div class="panel__inner">
+              <p>
+                You may improve clarity and consistency, but avoid major
+                rebranding or total redesign. Keep scope small.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2 class="section__title">Contact</h2>
+
+        <form class="form" novalidate>
+          <div class="form__row">
+            <label class="form__label" for="name">Name</label>
+            <input
+              class="form__input"
+              id="name"
+              name="name"
+              type="text"
+              autocomplete="name"
+            />
+            <div class="form__hint">Optional</div>
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="email">Email</label>
+            <input
+              class="form__input"
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            />
+            <div class="form__hint">We will never share your email.</div>
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="topic">Topic</label>
+            <select class="form__input" id="topic" name="topic" required>
+              <option value="">Choose one</option>
+              <option>Workshops</option>
+              <option>Resources</option>
+              <option>Events</option>
+            </select>
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="message">Message</label>
+            <textarea
+              class="form__input"
+              id="message"
+              name="message"
+              rows="4"
+              required 
+            ></textarea>
+          </div>
+
+          <div class="form__actions">
+            <button class="btn btn--primary js-submit" type="submit">
+              Send
+            </button>
+            <button class="btn btn--ghost" type="reset">Reset</button>
+          </div>
+
+          <div class="form__status" role="status" aria-live="polite"></div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__title">Community Programs</div>
+        <div class="site-footer__text">
+          Starter codebase for reconstruction + intervention.
+        </div>
+        <div class="site-footer__links">
+          <a href="#overview">Overview</a>
+          <a href="#programs">Programs</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
