@@ -82,6 +82,25 @@ if (closeBtn && nav) {
         return;
       }
 
+      var topic = form.querySelector("#topic");
+      if (!topic || !status) return;
+
+        if (!topic.value) {
+      status.textContent = "Please select a topic.";
+      topic.focus();
+      return;
+     }
+
+    var message = form.querySelector("#message");
+    if (!message || !status) return;
+
+    if (!message.value.trim()) {
+      status.textContent = "Please enter a message.";
+      message.focus();
+      return;
+    }
+    
+
       status.textContent = "Message sent (demo).";
       status.classList.remove("is-error");
       status.classList.add("is-success"); // style not defined on purpose
